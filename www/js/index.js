@@ -23,5 +23,6 @@ $(document).on('pagecreate', '#feedPage', function(event) {
         format: function(num){return num.toFixed(2)}
         }
 	});
+    $("#container").listview("refresh");
 	
 });
