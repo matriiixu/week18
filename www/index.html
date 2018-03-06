@@ -24,6 +24,8 @@
           	<!-- RACTIVE binding location - where to display data - a ListView -->
     		<ul data-role="listview" id='container'></ul>
             
+            
+            
         </div>
     
 	</div>
@@ -33,11 +35,12 @@
     <script id='myTemplate' type='text/ractive'>
 	
 			{{#weather}}
-			<li>{{weather_state_abbr}}</li>
-			<img src="https://www.metaweather.com/static/img/weather/lr.svg" width="50px" height="50px">{{url}}</img>
+			<li><img src="https://www.metaweather.com/static/img/weather/{{weather_state_abbr}}.svg" height="24" width="24"></li>
+			
 			{{/weather}}
 
     </script>
 
 </body>
 </html>
+<!--<img src="https://www.metaweather.com/static/img/weather/{{weather_state_abbr}}.svg" height="24" width="24">fvfve -->
