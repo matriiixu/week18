@@ -16,8 +16,9 @@
     <div data-role="page" id="feedPage">
       
    		<div data-role="header">
-        	<h1>My Feed</h1>
-        	<h3>The Weather for Birmingham</h3>
+        	
+        	<h3>Birmingham</h3>
+        	
       	</div>
       
       	<div data-role="content">
@@ -36,8 +37,13 @@
     <script id='myTemplate' type='text/ractive'>
 	
 			{{#weather}}
-			<li>{{weather_state_name}}<img src="https://www.metaweather.com/static/img/weather/{{weather_state_abbr}}.svg" height="24" width="24"></li>
-			
+            <ul data-role="listview">
+                <li>{{applicable_date}}</li>
+                <li>Today there are: {{format(the_temp)}} &#8451;</li>
+                <li>State: {{weather_state_name}}<img src="https://www.metaweather.com/static/img/weather/{{weather_state_abbr}}.svg" height="24" width="24"></li>
+                <li>Temperature: {{format(min_temp)}}&#176; - {{format(max_temp)}} &#8451;</li>
+                
+			</ul>
 			{{/weather}}
 
     </script>

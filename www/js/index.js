@@ -19,7 +19,9 @@ $(document).on('pagecreate', '#feedPage', function(event) {
 	var ractive = new Ractive({
     	el: 'container', <!-- where -->
     	template: '#myTemplate', <!-- how -->
-    	data: { weather : weather.consolidated_weather } <!-- what - specify the list of weather reports using dot notation-->
+    	data: { weather : weather.consolidated_weather,  // what - specify the list of weather reports using dot notation
+        format: function(num){return num.toFixed(2)}
+        }
 	});
 	
 });
