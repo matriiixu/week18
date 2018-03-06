@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "mob.app.dev.weatherapi"
+        versionCode = "1" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Weather API demo</name>
+
+    <description>
+        An example of using a simple weather API
+    </description>
+
+    <author href="http://www.worcester.ac.uk/discover/chris-bowers.html" email="c.bowers@worc.ac.uk">
+        Chris P. Bowers
+    </author>
+	
+	<!-- add plugins required for OAuth.io -->
+	
+	<!-- give access to all domains in the outside world -->
+	<access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+
+</widget>
