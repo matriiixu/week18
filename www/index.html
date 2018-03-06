@@ -17,6 +17,7 @@
       
    		<div data-role="header">
         	<h1>My Feed</h1>
+        	<h3>The Weather for Birmingham</h3>
       	</div>
       
       	<div data-role="content">
@@ -35,7 +36,7 @@
     <script id='myTemplate' type='text/ractive'>
 	
 			{{#weather}}
-			<li><img src="https://www.metaweather.com/static/img/weather/{{weather_state_abbr}}.svg" height="24" width="24"></li>
+			<li>{{weather_state_name}}<img src="https://www.metaweather.com/static/img/weather/{{weather_state_abbr}}.svg" height="24" width="24"></li>
 			
 			{{/weather}}
 
