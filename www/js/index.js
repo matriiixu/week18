@@ -1,4 +1,4 @@
-var feedURL = "https://www.metaweather.com/api/location/44418/";
+var feedURL = "https://www.metaweather.com/api/location/12723/";
 
 $(document).on('pagecreate', '#feedPage', function(event) {
 	
